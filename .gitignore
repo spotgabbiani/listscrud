@@ -1,2 +1,3 @@
 /src/server/node_modules
 /src/client/lists/node_modules
+/mongocontainer/mongo-volume
