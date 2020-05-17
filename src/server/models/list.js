@@ -1,12 +1,9 @@
 const mongoose =  require('mongoose');
-const ObjectId = mongoose.Schema.Types.ObjectId;
 const Item = require('./item');
 
 const schema = new mongoose.Schema({
     name: String,
-    items : [{
-      name: String
-  }]
+    items : [Item.schema]
 });
 
 module.exports = mongoose.model('List', schema);

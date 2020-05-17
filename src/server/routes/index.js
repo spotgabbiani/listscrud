@@ -14,7 +14,6 @@ router.post("/lists", async (req, res) => {
             name: req.body.name,
             items: req.body.items
         })
-        console.log(list);
         await list.save();
         res.send(list);
     } catch(err){
@@ -36,7 +35,6 @@ router.get("/lists/:id", async (req, res) => {
 router.patch("/lists/:id", async (req, res) => {
     try {
         const list = await List.findOne({ _id: req.params.id })
-        console.log(req.body.items);
         if (req.body.name) {
             list.name = req.body.name;
         }
