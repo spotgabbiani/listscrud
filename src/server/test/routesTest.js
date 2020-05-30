@@ -198,18 +198,4 @@ describe('Lists', () => {
             });
         });
     });
-
-    /*describe('/MIDDLEWARE ', () => {
-        it('it should validate that auth cookie exists', (done) => {
-        const spy = sinon.spy(console, 'log');
-        chai.request(server)
-            .get('/api/lists')
-            .set('Cookie', 'auth=something')
-            .end(() => {
-                    assert(spy.calledWith('auth cookie was found'));
-                done();
-            });
-        console.log.restore();
-        });
-    });*/
 });
